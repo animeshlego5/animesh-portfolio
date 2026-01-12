@@ -8,7 +8,7 @@ export const PROJECTS: Project[] = [
       start: "01.2026",
     },
     link: "https://notespy.vercel.app/",
-    logo: "/icon.png",
+    logo: "/animesh-portfolio/icon.png",
     skills: [
       "Next.js",
       "FastAPI",
@@ -35,7 +35,7 @@ A Shazam-like web app with advanced audio fingerprinting capabilities:
       start: "01.2025",
     },
     link: "https://think-weave.vercel.app/",
-    logo: "/thinkweave-logo.svg",
+    logo: "/animesh-portfolio/thinkweave-logo.svg",
     skills: [
       "React",
       "Node.js",
