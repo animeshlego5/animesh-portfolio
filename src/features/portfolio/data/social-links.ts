@@ -19,4 +19,10 @@ export const SOCIAL_LINKS: SocialLink[] = [
     description: "@LukaATM",
     href: "https://x.com/LukaATM",
   },
+  {
+    icon: "https://cdn.simpleicons.org/whatsapp/25D366",
+    title: "WhatsApp",
+    description: "+91 84472 30802",
+    href: "https://api.whatsapp.com/send?phone=918447230802&text=Hey%2C%20I%20just%20visited%20your%20website!",
+  },
 ];

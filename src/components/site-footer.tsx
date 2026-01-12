@@ -70,6 +70,18 @@ export function SiteFooter() {
               <Icons.linkedin className="size-4" />
               <span className="sr-only">LinkedIn</span>
             </a>
+
+            <Separator />
+
+            <a
+              className="flex items-center text-muted-foreground transition-colors hover:text-foreground"
+              href="https://api.whatsapp.com/send?phone=918447230802&text=Hey%2C%20I%20just%20visited%20your%20website!"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icons.whatsapp className="size-4" />
+              <span className="sr-only">WhatsApp</span>
+            </a>
           </div>
         </div>
       </div>
