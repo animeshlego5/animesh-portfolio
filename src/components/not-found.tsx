@@ -1,41 +1,36 @@
-import { ArrowRightIcon } from "lucide-react";
+import { ArrowRightIcon, HomeIcon } from "lucide-react";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { USER } from "@/features/portfolio/data/user";
 
 export function NotFound({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "flex h-[calc(100svh-5.5rem)] flex-col items-center justify-center",
+        "flex h-[calc(100svh-5.5rem)] flex-col items-center justify-center px-4 text-center",
         className
       )}
     >
-      <svg
-        className="h-28 w-full text-border"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 514 258"
-        fill="none"
-      >
-        <path
-          d="M65 193v64h128v-64H65Zm0 0H1V65h64m0 128V65m384 0H321v128h128m0-128V1H257v256h192v-64m0-128v128m0-128h64v128h-64M65 65h128V1H65v64Z"
-          stroke="currentColor"
-          strokeWidth="1"
-          vectorEffect="non-scaling-stroke"
-        />
-      </svg>
-
-      <h1 className="my-6 text-8xl font-medium tracking-tighter tabular-nums">
+      <h1 className="text-8xl font-bold tracking-tighter tabular-nums text-muted-foreground/50">
         404
       </h1>
 
-      <Button variant="default" asChild>
-        <Link href="/">
-          Go to Home
-          <ArrowRightIcon />
-        </Link>
-      </Button>
+      <h2 className="mt-4 text-2xl font-semibold">Page Not Found</h2>
+
+      <p className="mt-2 max-w-md text-muted-foreground">
+        Oops! The page you're looking for doesn't exist. It might have been moved or deleted.
+      </p>
+
+      <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+        <Button variant="default" asChild>
+          <Link href="/">
+            <HomeIcon className="mr-2 size-4" />
+            Back to {USER.firstName}'s Portfolio
+          </Link>
+        </Button>
+      </div>
     </div>
   );
 }
