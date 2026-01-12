@@ -1,7 +1,6 @@
-import { RssIcon } from "lucide-react";
 import Link from "next/link";
 
-import { SITE_INFO, SOURCE_CODE_GITHUB_URL } from "@/config/site";
+import { SOURCE_CODE_GITHUB_URL } from "@/config/site";
 import { cn } from "@/lib/utils";
 
 import { Icons } from "./icons";
@@ -11,18 +10,18 @@ export function SiteFooter() {
     <footer className="max-w-screen overflow-x-hidden px-2">
       <div className="screen-line-before mx-auto border-x border-edge pt-4 md:max-w-3xl">
         <p className="mb-1 px-4 text-center font-mono text-sm text-balance text-muted-foreground">
-          Inspired by tailwindcss.com & ui.shadcn.com
+          Inspired by tailwindcss.com &amp; ui.shadcn.com
         </p>
 
         <p className="mb-4 px-4 text-center font-mono text-sm text-balance text-muted-foreground">
           Built by{" "}
           <a
             className="link"
-            href="https://x.com/iamncdai"
+            href="https://github.com/animeshlego5"
             target="_blank"
             rel="noopener"
           >
-            ncdai
+            animeshlego5
           </a>
           . The source code is available on{" "}
           <a
@@ -36,48 +35,11 @@ export function SiteFooter() {
           .
         </p>
 
-        <div className="screen-line-before flex justify-center gap-2 py-3 font-mono text-xs text-muted-foreground sm:hidden">
-          <Link className="font-medium" href="/sponsors">
-            Sponsors
-          </Link>
-
-          <span className="opacity-50">•</span>
-
-          <a
-            className="font-medium"
-            href={`${SITE_INFO.url}/llms.txt`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            llms.txt
-          </a>
-        </div>
-
         <div className="screen-line-before screen-line-after flex w-full before:z-1 after:z-1">
           <div className="mx-auto flex items-center justify-center gap-3 border-x border-edge bg-background px-4">
-            <Link
-              className="flex font-mono text-xs font-medium text-muted-foreground max-sm:hidden"
-              href="/sponsors"
-            >
-              Sponsors
-            </Link>
-
-            <Separator className="max-sm:hidden" />
-
-            <a
-              className="flex font-mono text-xs font-medium text-muted-foreground max-sm:hidden"
-              href={`${SITE_INFO.url}/llms.txt`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              llms.txt
-            </a>
-
-            <Separator className="max-sm:hidden" />
-
             <a
               className="flex items-center text-muted-foreground transition-colors hover:text-foreground"
-              href="https://x.com/iamncdai"
+              href="https://x.com/LukaATM"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -89,7 +51,7 @@ export function SiteFooter() {
 
             <a
               className="flex items-center text-muted-foreground transition-colors hover:text-foreground"
-              href="https://github.com/ncdai"
+              href="https://github.com/animeshlego5"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -101,39 +63,12 @@ export function SiteFooter() {
 
             <a
               className="flex items-center text-muted-foreground transition-colors hover:text-foreground"
-              href="https://www.linkedin.com/in/ncdai"
+              href="https://www.linkedin.com/in/animesh-singh-gosain-07a486248/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Icons.linkedin className="size-4" />
               <span className="sr-only">LinkedIn</span>
-            </a>
-
-            <Separator />
-
-            <a
-              className="flex items-center text-muted-foreground transition-colors hover:text-foreground"
-              href={`${SITE_INFO.url}/rss`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <RssIcon className="size-4" />
-              <span className="sr-only">RSS</span>
-            </a>
-
-            <Separator />
-
-            <a
-              className="flex text-muted-foreground transition-colors hover:text-foreground"
-              href={
-                process.env.NEXT_PUBLIC_DMCA_URL ||
-                "https://www.dmca.com/ProtectionPro.aspx"
-              }
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icons.dmca className="h-4.5 w-auto" />
-              <span className="sr-only">DMCA.com Protection Status</span>
             </a>
           </div>
         </div>

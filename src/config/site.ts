@@ -26,8 +26,8 @@ export const MAIN_NAV: NavItem[] = [
 ];
 
 export const GITHUB_USERNAME = "animeshlego5";
-export const SOURCE_CODE_GITHUB_REPO = "ncdai/chanhdai.com";
-export const SOURCE_CODE_GITHUB_URL = "https://github.com/ncdai/chanhdai.com";
+export const SOURCE_CODE_GITHUB_REPO = "animeshlego5/animesh-portfolio";
+export const SOURCE_CODE_GITHUB_URL = "https://github.com/animeshlego5/animesh-portfolio";
 
 export const SPONSORSHIP_URL = "https://github.com/sponsors/ncdai";
 

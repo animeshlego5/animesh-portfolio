@@ -24,7 +24,7 @@ export const USER = {
 - Skilled in **Java**, **Python**, **JavaScript/TypeScript**, and modern full-stack technologies.
 - **400+ LeetCode Problems Solved** — strong foundation in data structures and algorithms.
 - Open Source contributor to Y Combinator-backed projects.
-- Building real-world applications with **Next.js**, **FastAPI**, **Spring Boot**, and **PostgreSQL**.
+- Building real-world applications with **Next.js**, **FastAPI**, **Spring Boot**, and **Bun**.
 `,
   avatar: "/Profile Pic.jpg",
   ogImage: "/icon.svg",

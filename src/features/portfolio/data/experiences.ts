@@ -3,14 +3,14 @@ import type { Experience } from "../types/experiences";
 export const EXPERIENCES: Experience[] = [
   {
     id: "voideditor",
-    companyName: "VoidEditor (Open Source)",
+    companyName: "VoidEditor (YCombinator)",
     companyLogo: "https://cdn.simpleicons.org/github/181717",
     positions: [
       {
         id: "void-contributor",
         title: "Open Source Contributor",
         employmentPeriod: {
-          start: "2024",
+          start: "2025",
         },
         employmentType: "Open Source",
         icon: "code",
