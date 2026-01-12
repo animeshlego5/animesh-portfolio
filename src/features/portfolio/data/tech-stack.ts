@@ -72,13 +72,6 @@ export const TECH_STACK: TechStack[] = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bun/bun-original.svg",
   },
   {
-    key: "expressjs",
-    title: "Express.js",
-    href: "https://expressjs.com/",
-    categories: ["Framework"],
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-  },
-  {
     key: "shadcn",
     title: "shadcn/ui",
     href: "https://ui.shadcn.com/",

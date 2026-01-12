@@ -1,4 +1,5 @@
 import {
+  BriefcaseIcon,
   GlobeIcon,
   MapPinIcon,
   MarsIcon,
@@ -20,7 +21,6 @@ import {
   IntroItemLink,
 } from "./intro-item";
 import { JobItem } from "./job-item";
-import { PhoneItem } from "./phone-item";
 
 export function Overview() {
   return (
@@ -42,6 +42,13 @@ export function Overview() {
         <div className="grid gap-x-12 gap-y-2.5 sm:grid-cols-2">
           <IntroItem>
             <IntroItemIcon>
+              <BriefcaseIcon />
+            </IntroItemIcon>
+            <IntroItemContent>{USER.jobTitle}</IntroItemContent>
+          </IntroItem>
+
+          <IntroItem>
+            <IntroItemIcon>
               <MapPinIcon />
             </IntroItemIcon>
             <IntroItemContent>
@@ -55,8 +62,6 @@ export function Overview() {
           </IntroItem>
 
           <CurrentLocalTimeItem timeZone={USER.timeZone} />
-
-          <PhoneItem phoneNumber={USER.phoneNumber} />
 
           <EmailItem email={USER.email} />
 

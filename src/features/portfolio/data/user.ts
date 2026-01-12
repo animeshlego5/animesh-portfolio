@@ -26,7 +26,7 @@ export const USER = {
 - Open Source contributor to Y Combinator-backed projects.
 - Building real-world applications with **Next.js**, **FastAPI**, **Spring Boot**, and **PostgreSQL**.
 `,
-  avatar: "https://avatars.githubusercontent.com/u/animeshlego5",
+  avatar: "/Profile Pic.jpg",
   ogImage: "/icon.svg",
   namePronunciationUrl: "",
   timeZone: "Asia/Kolkata",
