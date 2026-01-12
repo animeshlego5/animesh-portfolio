@@ -2,39 +2,21 @@ import type { SocialLink } from "../types/social-links";
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    icon: "https://assets.chanhdai.com/images/link-icons/x.webp?t=1759581475",
-    title: "X (formerly Twitter)",
-    description: "@iamncdai",
-    href: "https://x.com/iamncdai",
-  },
-  {
-    icon: "https://assets.chanhdai.com/images/link-icons/github.webp?t=1759581475",
+    icon: "https://cdn.simpleicons.org/github/181717",
     title: "GitHub",
-    description: "ncdai",
-    href: "https://github.com/ncdai",
+    description: "animeshlego5",
+    href: "https://github.com/animeshlego5",
   },
   {
-    icon: "https://assets.chanhdai.com/images/link-icons/linkedin.webp?t=1759581475",
+    icon: "https://cdn.simpleicons.org/linkedin/0A66C2",
     title: "LinkedIn",
-    description: "ncdai",
-    href: "https://linkedin.com/in/ncdai",
+    description: "Animesh Singh Gosain",
+    href: "https://www.linkedin.com/in/animesh-singh-gosain-07a486248/",
   },
   {
-    icon: "https://assets.chanhdai.com/images/link-icons/dailydotdev.webp?t=1759581475",
-    title: "daily.dev",
-    description: "@ncdai",
-    href: "https://app.daily.dev/ncdai",
-  },
-  {
-    icon: "https://assets.chanhdai.com/images/link-icons/zalo.webp?t=1759581475",
-    title: "Zalo",
-    description: "Quaric",
-    href: "https://zalo.me/2353934240045322830",
-  },
-  {
-    icon: "https://assets.chanhdai.com/images/link-icons/youtube.webp?t=1759581475",
-    title: "YouTube",
-    description: "@ncdai",
-    href: "https://www.youtube.com/@ncdai",
+    icon: "https://cdn.simpleicons.org/x/000000",
+    title: "X (formerly Twitter)",
+    description: "@LukaATM",
+    href: "https://x.com/LukaATM",
   },
 ];

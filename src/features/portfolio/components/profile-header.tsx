@@ -18,23 +18,24 @@ export function ProfileHeader() {
         </div>
 
         <a
-          href="https://vietnam.gov.vn/about-viet-nam"
+          href="https://india.gov.in"
           target="_blank"
           rel="noreferrer"
           className="absolute top-0 -left-px"
         >
-          {/* Flag of Viet Nam */}
+          {/* Flag of India */}
           <svg
             className="h-8 sm:h-9"
-            viewBox="0 0 30 20"
+            viewBox="0 0 900 600"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <title>Flag of Viet Nam</title>
-            <rect width="30" height="20" fill="#F00" />
-            <polygon
-              points="15,4 11.47,14.85 20.71,8.15 9.29,8.15 18.53,14.85"
-              fill="#FFEB00"
-            />
+            <title>Flag of India</title>
+            <rect width="900" height="200" fill="#FF9933" />
+            <rect y="200" width="900" height="200" fill="#FFFFFF" />
+            <rect y="400" width="900" height="200" fill="#138808" />
+            <circle cx="450" cy="300" r="60" fill="#000080" />
+            <circle cx="450" cy="300" r="50" fill="#FFFFFF" />
+            <circle cx="450" cy="300" r="10" fill="#000080" />
           </svg>
         </a>
       </div>
