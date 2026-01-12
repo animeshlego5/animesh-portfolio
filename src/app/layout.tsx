@@ -49,11 +49,11 @@ export const metadata: Metadata = {
   keywords: SITE_INFO.keywords,
   authors: [
     {
-      name: "ncdai",
+      name: "Animesh Gosain",
       url: SITE_INFO.url,
     },
   ],
-  creator: "ncdai",
+  creator: "Animesh Gosain",
   openGraph: {
     siteName: SITE_INFO.name,
     url: "/",
@@ -73,23 +73,19 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    creator: "@iamncdai", // Twitter username
+    creator: "@LukaATM", // Updated Twitter username
     images: [SITE_INFO.ogImage],
   },
   icons: {
     icon: [
       {
-        url: "https://assets.chanhdai.com/images/favicon.ico",
-        sizes: "any",
-      },
-      {
-        url: "https://assets.chanhdai.com/images/favicon.svg",
+        url: "/icon.svg",
         type: "image/svg+xml",
       },
     ],
     apple: {
-      url: "https://assets.chanhdai.com/images/apple-touch-icon.png",
-      type: "image/png",
+      url: "/icon.svg",
+      type: "image/svg+xml",
       sizes: "180x180",
     },
   },
