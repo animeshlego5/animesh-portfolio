@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   output: "export",
   reactStrictMode: true,
   transpilePackages: ["next-mdx-remote"],
-  allowedDevOrigins: ["chanhdai-macbook.local"],
   turbopack: {
     root: path.join(__dirname, "."),
   },
@@ -23,38 +22,18 @@ const nextConfig: NextConfig = {
         hostname: "images.unsplash.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.simpleicons.org",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.jsdelivr.net",
+        port: "",
+      },
     ],
     qualities: [75, 100],
-  },
-  async redirects() {
-    return [
-      {
-        source:
-          "/:section(blog|components)/writing-effect-inspired-by-apple:extension(.mdx)?",
-        destination: "/:section/apple-hello-effect:extension",
-        permanent: true,
-      },
-    ];
-  },
-  async rewrites() {
-    return [
-      {
-        source: "/blog/:slug.mdx",
-        destination: "/blog.mdx/:slug",
-      },
-      {
-        source: "/components/:slug.mdx",
-        destination: "/blog.mdx/:slug",
-      },
-      {
-        source: "/rss",
-        destination: "/blog/rss",
-      },
-      {
-        source: "/registry/rss",
-        destination: "/components/rss",
-      },
-    ];
   },
   // async headers() {
   //   return [
