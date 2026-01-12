@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { USER } from "@/features/portfolio/data/user";
 import { FlipSentences } from "@/registry/flip-sentences";
 
@@ -9,11 +11,14 @@ export function ProfileHeader() {
     <div className="screen-line-after flex border-x border-edge">
       <div className="shrink-0 border-r border-edge">
         <div className="mx-0.5 my-0.75">
-          <img
+          <Image
             className="size-32 rounded-full ring-1 ring-border ring-offset-2 ring-offset-background select-none sm:size-40"
             alt={`${USER.displayName}'s avatar`}
             src={USER.avatar}
-            fetchPriority="high"
+            width={160}
+            height={160}
+            priority
+            unoptimized
           />
         </div>
 
