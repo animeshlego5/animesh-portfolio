@@ -23,19 +23,26 @@ export function ProfileHeader() {
           rel="noreferrer"
           className="absolute top-0 -left-px"
         >
-          {/* Flag of India */}
+          {/* Flag of India with Ashoka Chakra */}
           <svg
             className="h-8 sm:h-9"
-            viewBox="0 0 900 600"
+            viewBox="0 0 225 150"
             xmlns="http://www.w3.org/2000/svg"
           >
             <title>Flag of India</title>
-            <rect width="900" height="200" fill="#FF9933" />
-            <rect y="200" width="900" height="200" fill="#FFFFFF" />
-            <rect y="400" width="900" height="200" fill="#138808" />
-            <circle cx="450" cy="300" r="60" fill="#000080" />
-            <circle cx="450" cy="300" r="50" fill="#FFFFFF" />
-            <circle cx="450" cy="300" r="10" fill="#000080" />
+            <rect width="225" height="50" fill="#FF9933" />
+            <rect y="50" width="225" height="50" fill="#FFFFFF" />
+            <rect y="100" width="225" height="50" fill="#138808" />
+            <g transform="translate(112.5, 75)">
+              <circle r="20" fill="none" stroke="#000080" strokeWidth="1.25" />
+              <circle r="3.5" fill="#000080" />
+              {[...Array(24)].map((_, i) => (
+                <g key={i} transform={`rotate(${i * 15})`}>
+                  <line x1="0" y1="3.5" x2="0" y2="20" stroke="#000080" strokeWidth="0.5" />
+                  <circle cx="0" cy="17" r="1" fill="#000080" />
+                </g>
+              ))}
+            </g>
           </svg>
         </a>
       </div>

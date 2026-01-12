@@ -18,7 +18,10 @@ export function SocialLinkItem({ icon, title, description, href }: SocialLink) {
     >
       <div className="relative size-12 shrink-0">
         <Image
-          className="rounded-xl select-none corner-squircle supports-corner-shape:rounded-[50%]"
+          className={cn(
+            "rounded-xl select-none corner-squircle supports-corner-shape:rounded-[50%]",
+            (title === "GitHub" || title === "X (formerly Twitter)") && "dark:invert"
+          )}
           src={icon}
           alt={title}
           width={48}
