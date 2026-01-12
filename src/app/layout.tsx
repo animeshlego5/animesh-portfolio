@@ -79,17 +79,17 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon.png",
+        url: "/animesh-portfolio/icon.png",
         type: "image/png",
         sizes: "192x192",
       },
       {
-        url: "/icon.svg",
+        url: "/animesh-portfolio/icon.svg",
         type: "image/svg+xml",
       },
     ],
     apple: {
-      url: "/icon.png",
+      url: "/animesh-portfolio/icon.png",
       type: "image/png",
       sizes: "180x180",
     },

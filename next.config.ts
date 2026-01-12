@@ -3,7 +3,6 @@ import path from "path";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/animesh-portfolio",
   reactStrictMode: true,
   transpilePackages: ["next-mdx-remote"],
   turbopack: {
