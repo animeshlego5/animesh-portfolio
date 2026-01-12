@@ -35,25 +35,24 @@ export function ProjectItem({
     <CollapsibleWithContext defaultOpen={project.isExpanded} asChild>
       <div className={className}>
         <div className="flex items-center hover:bg-accent2">
-          {project.logo ? (
-            <Image
-              src={project.logo}
-              alt={project.title}
-              width={32}
-              height={32}
-              quality={100}
-              className="mx-4 flex size-6 shrink-0 select-none"
-              unoptimized
-              aria-hidden="true"
-            />
-          ) : (
-            <div
-              className="mx-4 flex size-6 shrink-0 items-center justify-center rounded-lg border border-muted-foreground/15 bg-muted text-muted-foreground ring-1 ring-edge ring-offset-1 ring-offset-background select-none"
-              aria-hidden="true"
-            >
+          <div
+            className="mx-4 flex size-6 shrink-0 items-center justify-center rounded-lg border border-muted-foreground/15 bg-muted text-muted-foreground ring-1 ring-edge ring-offset-1 ring-offset-background select-none"
+            aria-hidden="true"
+          >
+            {project.logo ? (
+              <Image
+                src={project.logo}
+                alt={project.title}
+                width={32}
+                height={32}
+                quality={100}
+                className="size-7 object-contain scale-125"
+                unoptimized
+              />
+            ) : (
               <BoxIcon className="size-4" />
-            </div>
-          )}
+            )}
+          </div>
 
           <div className="flex-1 border-l border-dashed border-edge">
             <CollapsibleTrigger className="flex w-full items-center gap-2 p-4 pr-2 text-left">
