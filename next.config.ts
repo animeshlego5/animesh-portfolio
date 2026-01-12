@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 import path from "path";
 
 const nextConfig: NextConfig = {
+  output: "export",
   reactStrictMode: true,
   transpilePackages: ["next-mdx-remote"],
   allowedDevOrigins: ["chanhdai-macbook.local"],
@@ -10,6 +11,7 @@ const nextConfig: NextConfig = {
   },
   devIndicators: false,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
