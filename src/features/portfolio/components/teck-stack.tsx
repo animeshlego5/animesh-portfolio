@@ -28,6 +28,8 @@ export function TeckStack() {
         <TooltipProvider>
           <ul className="flex flex-wrap gap-4 select-none">
             {TECH_STACK.map((tech) => {
+              const iconUrl = tech.icon || `https://assets.chanhdai.com/images/tech-stack-icons/${tech.key}.svg`;
+
               return (
                 <li key={tech.key} className="flex">
                   <TooltipRoot>
@@ -41,34 +43,13 @@ export function TeckStack() {
                         />
                       }
                     >
-                      {tech.theme ? (
-                        <>
-                          <Image
-                            src={`https://assets.chanhdai.com/images/tech-stack-icons/${tech.key}-light.svg`}
-                            alt={`${tech.title} light icon`}
-                            width={32}
-                            height={32}
-                            className="hidden [html.light_&]:block"
-                            unoptimized
-                          />
-                          <Image
-                            src={`https://assets.chanhdai.com/images/tech-stack-icons/${tech.key}-dark.svg`}
-                            alt={`${tech.title} dark icon`}
-                            width={32}
-                            height={32}
-                            className="hidden [html.dark_&]:block"
-                            unoptimized
-                          />
-                        </>
-                      ) : (
-                        <Image
-                          src={`https://assets.chanhdai.com/images/tech-stack-icons/${tech.key}.svg`}
-                          alt={`${tech.title} icon`}
-                          width={32}
-                          height={32}
-                          unoptimized
-                        />
-                      )}
+                      <Image
+                        src={iconUrl}
+                        alt={`${tech.title} icon`}
+                        width={32}
+                        height={32}
+                        unoptimized
+                      />
                     </TooltipTrigger>
 
                     <TooltipContent>
