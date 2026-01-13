@@ -1,7 +1,7 @@
 {
-  "name": "ncdai",
-  "version": "0.0.3",
-  "description": "A simple CLI wrapper for adding components from chanhdai.com component registry using shadcn.",
+  "name": "animesh-cli",
+  "version": "0.0.1",
+  "description": "CLI wrapper for Animesh Portfolio components.",
   "publishConfig": {
     "access": "public"
   },
@@ -24,23 +24,20 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "ncdai",
+    "animesh",
     "cli",
-    "shadcn",
-    "components",
-    "registry"
+    "portfolio"
   ],
-  "author": "Nguyen Chanh Dai <dai@chanhdai.com>",
+  "author": "Animesh Singh Gosain <animeshlego5@gmail.com>",
   "license": "MIT",
-  "homepage": "https://chanhdai.com",
+  "homepage": "https://github.com/animeshlego5/animesh-portfolio",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ncdai/chanhdai.com.git",
-    "directory": "packages/ncdai"
+    "url": "git+https://github.com/animeshlego5/animesh-portfolio.git",
+    "directory": "packages/animesh-cli"
   },
-  "funding": "https://github.com/sponsors/ncdai",
   "bugs": {
-    "url": "https://github.com/ncdai/chanhdai.com/issues"
+    "url": "https://github.com/animeshlego5/animesh-portfolio/issues"
   },
   "devDependencies": {
     "tsup": "^8.5.0"
