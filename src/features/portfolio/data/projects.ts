@@ -16,14 +16,13 @@ export const PROJECTS: Project[] = [
       "PostgreSQL",
       "Machine Learning",
       "NumPy",
-      "Audio Fingerprinting",
     ],
     description: `Music Recognition & Recommendation Engine
 
-A Shazam-like web app with advanced audio fingerprinting capabilities:
-- Implemented a FastAPI backend with spectral peak hashing and MFCC features for audio fingerprinting
+A Shazam-like web app with advanced music identification capabilities:
+- Implemented a FastAPI backend with spectral peak hashing and MFCC features for identification
 - Achieved 85%+ accuracy on sub-second song identification
-- Built a vectorized fingerprint search pipeline using NumPy
+- Built a vectorized search pipeline using NumPy
 
 [Read Medium Article](#)`,
     isExpanded: true,
@@ -43,14 +42,13 @@ A Shazam-like web app with advanced audio fingerprinting capabilities:
       "PostgreSQL",
       "Docker",
       "OpenAI API",
-      "Stable Diffusion",
     ],
     description: `Unified GenAI Orchestration Gateway
 
-Full-stack SaaS serving AI text/image generation:
+Full-stack SaaS serving AI text generation:
 - Per-user quota enforcement and rate limiting middleware
 - Tiered billing (free/premium) with dynamic credit tracking
-- Integration with OpenAI and Stable Diffusion providers`,
+- Integration with OpenAI providers`,
     isExpanded: true,
   },
 ];
