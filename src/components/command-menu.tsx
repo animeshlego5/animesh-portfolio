@@ -115,9 +115,20 @@ export function CommandMenu() {
 
       if (openInNewTab) {
         window.open(href, "_blank", "noopener");
-      } else {
-        router.push(href);
+        return;
       }
+
+      // Handle same-page hash navigation
+      if (href.startsWith("/#")) {
+        const hash = href.replace("/#", "");
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+          return;
+        }
+      }
+
+      router.push(href);
     },
     [router]
   );
@@ -270,10 +281,12 @@ function CommandLinkGroup({
           >
             {link?.iconImage ? (
               <Image
-                className={`rounded-sm corner-squircle supports-corner-shape:rounded-[50%] ${link.title === "GitHub" || link.title === "X (formerly Twitter)"
-                  ? "dark:invert"
-                  : ""
-                  }`}
+                className={`rounded-sm corner-squircle supports-corner-shape:rounded-[50%] ${
+                  link.title === "GitHub" ||
+                  link.title === "X (formerly Twitter)"
+                    ? "dark:invert"
+                    : ""
+                }`}
                 src={link.iconImage}
                 alt={link.title}
                 width={16}
