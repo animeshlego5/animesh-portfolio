@@ -15,7 +15,6 @@ export const PROJECTS: Project[] = [
       "Python",
       "PostgreSQL",
       "Machine Learning",
-      "NumPy",
     ],
     description: `Music Recognition & Recommendation Engine
 
@@ -25,6 +24,30 @@ A Shazam-like web app with advanced music identification capabilities:
 - Built a vectorized search pipeline using NumPy
 
 [Read Medium Article](#)`,
+    isExpanded: true,
+  },
+  {
+    id: "portfolio-website",
+    title: "Portfolio Website",
+    period: {
+      start: "01.2026",
+    },
+    link: "https://animeshlego5.github.io/animesh-portfolio/",
+    logo: "/animesh-portfolio/icon.svg",
+    skills: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "React",
+      "GitHub Pages",
+    ],
+    description: `Modern Developer Portfolio
+
+A sleek, responsive portfolio website showcasing projects and skills:
+- Built with Next.js 16 and TypeScript for type-safe development
+- Static site generation for fast loading on GitHub Pages
+- Dark/light theme support with smooth animations
+- Fully responsive design with modern UI components`,
     isExpanded: true,
   },
   {
