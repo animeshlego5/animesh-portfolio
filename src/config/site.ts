@@ -3,7 +3,7 @@ import type { NavItem } from "@/types/nav";
 
 export const SITE_INFO = {
   name: USER.displayName,
-  url: process.env.APP_URL || "https://chanhdai.com",
+  url: process.env.APP_URL || USER.website,
   ogImage: USER.ogImage,
   description: USER.bio,
   keywords: USER.keywords,
@@ -31,8 +31,4 @@ export const SOURCE_CODE_GITHUB_URL = "https://github.com/animeshlego5/animesh-p
 
 // SPONSORSHIP_URL removed - GitHub Sponsors not set up for this account
 
-export const UTM_PARAMS = {
-  utm_source: "chanhdai.com",
-  utm_medium: "referral",
-  utm_campaign: "portfolio",
-};
+export const UTM_PARAMS = {};
