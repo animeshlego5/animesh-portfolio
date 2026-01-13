@@ -28,7 +28,6 @@ import {
   CommandList,
 } from "@/components/ui/command";
 import { SOCIAL_LINKS } from "@/features/portfolio/data/social-links";
-import { useSound } from "@/hooks/use-sound";
 import { trackEvent } from "@/lib/events";
 
 import { AgMark } from "./ag-mark";
@@ -85,7 +84,6 @@ export function CommandMenu() {
   const router = useRouter();
   const { setTheme } = useTheme();
   const [open, setOpen] = useState(false);
-  const playClick = useSound("/audio/ui-sounds/click.wav");
 
   useHotkeys("mod+k, slash", (e) => {
     e.preventDefault();
@@ -127,7 +125,6 @@ export function CommandMenu() {
   const createThemeHandler = useCallback(
     (theme: "light" | "dark" | "system") => () => {
       setOpen(false);
-      playClick(0.5);
       trackEvent({
         name: "command_menu_action",
         properties: {
@@ -137,7 +134,7 @@ export function CommandMenu() {
       });
       setTheme(theme);
     },
-    [playClick, setTheme]
+    [setTheme]
   );
 
   return (
@@ -274,8 +271,8 @@ function CommandLinkGroup({
             {link?.iconImage ? (
               <Image
                 className={`rounded-sm corner-squircle supports-corner-shape:rounded-[50%] ${link.title === "GitHub" || link.title === "X (formerly Twitter)"
-                    ? "dark:invert"
-                    : ""
+                  ? "dark:invert"
+                  : ""
                   }`}
                 src={link.iconImage}
                 alt={link.title}

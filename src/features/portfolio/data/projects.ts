@@ -39,7 +39,6 @@ A Shazam-like web app with advanced music identification capabilities:
       "TypeScript",
       "Tailwind CSS",
       "React",
-      "GitHub Pages",
     ],
     description: `Modern Developer Portfolio
 
