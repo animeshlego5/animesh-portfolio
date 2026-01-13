@@ -56,16 +56,21 @@ export function MobileNav({
       </DropdownMenuTrigger>
 
       <DropdownMenuContent className="w-64" align="end" sideOffset={8}>
-        {items.map((link) => (
-          <DropdownMenuItem key={link.href} asChild>
-            <Link
-              href={link.href}
-              onClick={(e) => handleLinkClick(e, link.href)}
-            >
-              {link.title}
-            </Link>
-          </DropdownMenuItem>
-        ))}
+        {items.map((link) => {
+          const isHome = link.href === "/";
+          const isOnHomePage = ["/", "/index"].includes(pathname);
+          return (
+            <DropdownMenuItem key={link.href} asChild>
+              <Link
+                href={link.href}
+                onClick={(e) => handleLinkClick(e, link.href)}
+                data-disable-nprogress={isHome && isOnHomePage ? true : undefined}
+              >
+                {link.title}
+              </Link>
+            </DropdownMenuItem>
+          );
+        })}
       </DropdownMenuContent>
     </DropdownMenu>
   );

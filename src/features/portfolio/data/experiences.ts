@@ -4,7 +4,7 @@ export const EXPERIENCES: Experience[] = [
   {
     id: "voideditor",
     companyName: "VoidEditor (YCombinator)",
-    companyLogo: "https://cdn.simpleicons.org/github/181717",
+    companyLogo: "/animesh-portfolio/cube.png",
     positions: [
       {
         id: "void-contributor",
