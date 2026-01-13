@@ -64,7 +64,6 @@ export function MobileNav({
               <Link
                 href={link.href}
                 onClick={(e) => handleLinkClick(e, link.href)}
-                data-disable-nprogress={isHome && isOnHomePage ? true : undefined}
               >
                 {link.title}
               </Link>

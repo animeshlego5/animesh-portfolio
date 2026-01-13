@@ -69,7 +69,6 @@ export function NavItem({
     <Link
       href={href}
       onClick={handleClick}
-      data-disable-nprogress={active && isHome ? true : undefined}
       className={cn(
         "font-mono text-sm font-medium text-muted-foreground transition-[color] duration-300",
         active && "text-foreground"
