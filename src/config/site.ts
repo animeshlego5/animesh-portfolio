@@ -29,7 +29,7 @@ export const GITHUB_USERNAME = "animeshlego5";
 export const SOURCE_CODE_GITHUB_REPO = "animeshlego5/animesh-portfolio";
 export const SOURCE_CODE_GITHUB_URL = "https://github.com/animeshlego5/animesh-portfolio";
 
-export const SPONSORSHIP_URL = "https://github.com/sponsors/ncdai";
+// SPONSORSHIP_URL removed - GitHub Sponsors not set up for this account
 
 export const UTM_PARAMS = {
   utm_source: "chanhdai.com",

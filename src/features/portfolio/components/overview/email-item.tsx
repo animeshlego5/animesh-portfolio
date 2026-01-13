@@ -33,7 +33,7 @@ export function EmailItem({ email }: EmailItemProps) {
             isClient ? `Send email to ${emailDecoded}` : "Email address"
           }
         >
-          {isClient ? emailDecoded : "[Email protected]"}
+          {isClient ? emailDecoded : "Loading..."}
         </IntroItemLink>
       </IntroItemContent>
     </IntroItem>

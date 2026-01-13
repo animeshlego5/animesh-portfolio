@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useCallback } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -19,6 +21,23 @@ export function MobileNav({
   items: NavItem[];
   className?: string;
 }) {
+  const pathname = usePathname();
+
+  const handleLinkClick = useCallback(
+    (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+      const isHome = href === "/";
+      const isOnHomePage = ["/", "/index"].includes(pathname);
+
+      if (isHome && isOnHomePage) {
+        e.preventDefault();
+        if (window.scrollY > 0) {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      }
+    },
+    [pathname]
+  );
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -39,10 +58,16 @@ export function MobileNav({
       <DropdownMenuContent className="w-64" align="end" sideOffset={8}>
         {items.map((link) => (
           <DropdownMenuItem key={link.href} asChild>
-            <Link href={link.href}>{link.title}</Link>
+            <Link
+              href={link.href}
+              onClick={(e) => handleLinkClick(e, link.href)}
+            >
+              {link.title}
+            </Link>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>
     </DropdownMenu>
   );
 }
+

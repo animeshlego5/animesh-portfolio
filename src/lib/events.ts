@@ -1,4 +1,3 @@
-import posthog from "posthog-js";
 import { z } from "zod";
 
 const eventSchema = z.object({
@@ -18,9 +17,8 @@ const eventSchema = z.object({
 
 export type Event = z.infer<typeof eventSchema>;
 
+// Tracking disabled - function is kept to avoid breaking existing code
 export function trackEvent(input: Event) {
-  const event = eventSchema.parse(input);
-  if (event) {
-    posthog.capture(event.name, event.properties);
-  }
+  // No-op: analytics tracking has been removed
+  eventSchema.parse(input); // Keep validation for type safety
 }
