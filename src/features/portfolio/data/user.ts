@@ -17,7 +17,7 @@ export const USER = {
   email: "YW5pbWVzaGxlZ281QGdtYWlsLmNvbQ==", // animeshlego5@gmail.com base64 encoded
   website: "https://animeshlego5.github.io",
   jobTitle: "Full Stack Developer",
-  jobs: [],
+  jobs: [] as { title: string; company: string; website: string }[],
   about: `
 - **Full Stack Developer** passionate about building scalable backend systems and integrating AI solutions.
 - Skilled in **Java**, **Python**, **JavaScript/TypeScript**, and modern full-stack technologies.
