@@ -11,25 +11,17 @@ export const USER = {
   flipSentences: [
     "Focusing on scalable backend systems and AI integration.",
     "Full Stack Developer",
-    "Open Source Contributor",
   ],
   address: "New Delhi, Delhi",
   phoneNumber: "", // base64 encoded
   email: "YW5pbWVzaGxlZ281QGdtYWlsLmNvbQ==", // animeshlego5@gmail.com base64 encoded
   website: "https://animeshlego5.github.io",
   jobTitle: "Full Stack Developer",
-  jobs: [
-    {
-      title: "Open Source Contributor",
-      company: "VoidEditor (YCombinator)",
-      website: "https://voideditor.com",
-    },
-  ],
+  jobs: [],
   about: `
 - **Full Stack Developer** passionate about building scalable backend systems and integrating AI solutions.
 - Skilled in **Java**, **Python**, **JavaScript/TypeScript**, and modern full-stack technologies.
 - **400+ LeetCode Problems Solved** — strong foundation in data structures and algorithms.
-- Open Source contributor to Y Combinator-backed projects.
 - Building real-world applications with **Next.js**, **FastAPI**, **Spring Boot**, and **Bun**.
 `,
   avatar: "/animesh-portfolio/profile-pic.jpg",
