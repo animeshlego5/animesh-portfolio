@@ -1,4 +1,4 @@
-# Animesh Portfolio
+# Animesh's Portfolio
 
 A modern, responsive portfolio website showcasing my work as a Full Stack Developer. Built with performance and aesthetics in mind.
 
