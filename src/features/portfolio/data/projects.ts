@@ -9,13 +9,7 @@ export const PROJECTS: Project[] = [
     },
     link: "https://notespy.vercel.app/",
     logo: "/animesh-portfolio/icon.png",
-    skills: [
-      "Next.js",
-      "FastAPI",
-      "Python",
-      "PostgreSQL",
-      "Machine Learning",
-    ],
+    skills: ["Next.js", "FastAPI", "Python", "PostgreSQL", "Machine Learning"],
     description: `Music Recognition & Recommendation Engine
 
 A Shazam-like web app with advanced music identification capabilities:
@@ -23,7 +17,7 @@ A Shazam-like web app with advanced music identification capabilities:
 - Achieved 85%+ accuracy on sub-second song identification
 - Built a vectorized search pipeline using NumPy
 
-[Read Medium Article](#)`,
+[Read Medium Article](https://medium.com/@animeshlego5/how-notespy-works-deconstructing-a-shazam-clones-backend-7b2002013753)`,
     isExpanded: true,
   },
   {
@@ -34,12 +28,7 @@ A Shazam-like web app with advanced music identification capabilities:
     },
     link: "https://animeshlego5.github.io/animesh-portfolio/",
     logo: "/animesh-portfolio/icon.svg",
-    skills: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "React",
-    ],
+    skills: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
     description: `Modern Developer Portfolio
 
 A sleek, responsive portfolio website showcasing projects and skills:
